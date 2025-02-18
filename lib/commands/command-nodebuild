@@ -19,7 +19,7 @@ if [[ "${local_concurrency:-auto}" == "auto" || -z "${local_concurrency}" ]]; th
 fi
 
 # Ensure ASDF_NODEJS_PLUGIN_DIR is set
-ASDF_NODEJS_PLUGIN_DIR="${ASDF_NODEJS_PLUGIN_DIR:-$HOME/.asdf/plugins/nodejs}"
+ASDF_NODEJS_PLUGIN_DIR="/Users/fz/.asdf/plugins/nodejs"
 
 # Set ASDF_NODEJS_NODEBUILD_HOME, ensuring it defaults properly
 ASDF_NODEJS_NODEBUILD_HOME="${ASDF_NODEJS_NODEBUILD_HOME:-$ASDF_NODEJS_PLUGIN_DIR/.node-build}"
