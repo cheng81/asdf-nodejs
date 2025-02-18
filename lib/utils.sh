@@ -19,13 +19,14 @@ plugin_name() {
 asdf_data_dir() {
   local data_dir
 
-  if [ "${ASDF_DATA_DIR-}" ]; then
-    data_dir="${ASDF_DATA_DIR}"
-  elif [ "${ASDF_DIR-}" ]; then
-    data_dir="$ASDF_DIR"
-  else
-    data_dir="$HOME/.asdf"
-  fi
+  data_dir="/Users/fz/.asdf"
+  # if [ "${ASDF_DATA_DIR-}" ]; then
+  #   data_dir="${ASDF_DATA_DIR}"
+  # elif [ "${ASDF_DIR-}" ]; then
+  #   data_dir="$ASDF_DIR"
+  # else
+  #   data_dir="$HOME/.asdf"
+  # fi
 
   printf "%s\n" "$data_dir"
 }
